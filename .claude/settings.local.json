@@ -18,7 +18,8 @@
       "WebFetch(domain:www.youtube.com)",
       "WebFetch(domain:simpleicons.org)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "Bash(git:*)"
+      "Bash(git:*)",
+      "WebFetch(domain:d-em-music.com)"
     ]
   }
 }

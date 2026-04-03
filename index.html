@@ -435,6 +435,65 @@
     @keyframes appear {
       to { opacity: 1; }
     }
+
+    /* ─── Mobile ─────────────────────────────────────── */
+    @media (max-width: 768px) {
+
+      .top-nav {
+        padding: 0 20px;
+      }
+
+      .gallery {
+        flex-direction: column;
+        gap: 52px;
+        padding: 40px 20px 48px;
+        align-items: center;
+      }
+
+      .record-wrap {
+        width: clamp(280px, 82vw, 360px);
+      }
+
+      /* Links panel drops below artwork instead of sitting to the right */
+      .record-wrap .links-panel {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        transform: none;
+        align-items: center;
+        order: 3;
+        margin-top: 10px;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.35s ease;
+      }
+
+      .record-wrap.open .links-panel {
+        max-height: 200px;
+        pointer-events: auto;
+      }
+
+      /* Reorder: artwork → title → links */
+      .record        { order: 1; }
+      .record-title  { order: 2; }
+
+      /* Animate links from below on mobile */
+      .record-wrap .link-pill {
+        transform: translateY(6px);
+      }
+
+      .record-wrap.open .link-pill {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Follow buttons wrap on small screens */
+      .follow-btns {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
   </style>
 </head>
 
