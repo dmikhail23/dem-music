@@ -124,18 +124,6 @@
     .tab-btn:hover { color: rgba(255,255,255,0.65); }
     .tab-btn.active { color: #ffffff; }
 
-    .tab-btn .music-icon {
-      height: 1em;
-      width: auto;
-      vertical-align: -0.12em;
-      margin-right: 0.35em;
-      filter: invert(1);
-      mix-blend-mode: screen;
-      opacity: 0.28;
-      transition: opacity 0.25s ease;
-    }
-    .tab-btn.active .music-icon { opacity: 1; }
-    .tab-btn:hover .music-icon  { opacity: 0.65; }
 
     /* ─── Main content ────────────────────────────────── */
     .main {
@@ -522,7 +510,18 @@
     <span class="nav-wordmark">D'Em</span>
     <div class="nav-tabs">
       <button class="tab-btn active" onclick="switchTab('music')">
-        <img src="musical-note.webp" class="music-icon" alt="">Music
+        <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:-0.12em;margin-right:0.35em;">
+          <!-- Library container -->
+          <rect x="2" y="8" width="20" height="14" stroke="currentColor" stroke-width="1.2"/>
+          <rect x="4" y="5.5" width="16" height="2.5" stroke="currentColor" stroke-width="1.2"/>
+          <rect x="6.5" y="3" width="11" height="2.5" stroke="currentColor" stroke-width="1.2"/>
+          <!-- Double eighth note inside -->
+          <line x1="10.5" y1="19" x2="10.5" y2="13.5" stroke="currentColor" stroke-width="1"/>
+          <line x1="14.5" y1="19" x2="14.5" y2="14.2" stroke="currentColor" stroke-width="1"/>
+          <line x1="10.5" y1="13.5" x2="14.5" y2="14.2" stroke="currentColor" stroke-width="1"/>
+          <ellipse cx="10" cy="19.3" rx="1.5" ry="1" fill="currentColor"/>
+          <ellipse cx="14" cy="19.3" rx="1.5" ry="1" fill="currentColor"/>
+        </svg>Music
       </button>
     </div>
   </nav>
