@@ -1,0 +1,13 @@
+# Videos (too large for git)
+*.mp4
+
+# Design briefs / notes
+music-design-brief.md
+music-landing-page-brief.md
+
+# Unused icons
+music-library-icon.svg
+
+# OS files
+.DS_Store
+Thumbs.db

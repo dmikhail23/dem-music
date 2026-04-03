@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"Copy-Item 'C:\\\\Users\\\\MDM.50\\\\Desktop\\\\800x800-10116323--FA16C5CB-A7D4-43DE-8DB86E952CEDF9C2--0--55114--CoverArt4.jpg' \\\\\"C:\\\\Users\\\\MDM.50\\\\Documents\\\\D'Em - Pursuit\\\\artwork.jpg\\\\\"\")",
+      "Bash(powershell -Command \"Copy-Item 'C:\\\\Users\\\\MDM.50\\\\Desktop\\\\800x800-10116323--447EDFCE-4DC5-4DB8-9A3AF7B4E03E45B0--0--1392151--SingleCoverArt1.jpg' \\\\\"C:\\\\Users\\\\MDM.50\\\\Documents\\\\D'Em - Pursuit\\\\glass-echoes.jpg\\\\\"\")",
+      "WebSearch",
+      "WebFetch(domain:d-em-music.netlify.app)",
+      "Bash(magick --version)",
+      "Bash(convert --version)",
+      "Bash(ffmpeg -version)",
+      "Bash(python3 -c \"from PIL import Image; print\\(''pillow ok''\\)\")",
+      "Bash(python -c \"from PIL import Image; print\\(''pillow ok''\\)\")",
+      "Bash(python3:*)",
+      "Bash(winget install:*)",
+      "Bash(\"/c/Users/DM/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1-full_build/bin/ffmpeg.exe\" -loop 1 -i \"artwork-spotify-canvas.jpg\" -c:v libx264 -t 8 -pix_fmt yuv420p -vf \"scale=720:1280\" -movflags +faststart \"pursuit-spotify-canvas.mp4\" -y)",
+      "Bash(\"/c/Users/DM/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1-full_build/bin/ffmpeg.exe\" -loop 1 -i \"artwork.jpg\" -c:v libx264 -t 8 -pix_fmt yuv420p -vf \"scale=720:1280\" -movflags +faststart \"pursuit-spotify-canvas.mp4\" -y)",
+      "Bash(\"/c/Users/DM/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1-full_build/bin/ffmpeg.exe\" -loop 1 -i \"artwork.jpg\" -c:v libx264 -t 8 -pix_fmt yuv420p -vf \"scale=1080:1920:force_original_aspect_ratio=disable\" -aspect 9:16 -r 24 -movflags +faststart \"pursuit-spotify-canvas.mp4\" -y)",
+      "WebFetch(domain:www.youtube.com)",
+      "WebFetch(domain:simpleicons.org)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(git:*)"
+    ]
+  }
+}
