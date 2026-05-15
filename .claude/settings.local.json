@@ -19,7 +19,11 @@
       "WebFetch(domain:simpleicons.org)",
       "WebFetch(domain:raw.githubusercontent.com)",
       "Bash(git:*)",
-      "WebFetch(domain:d-em-music.com)"
+      "WebFetch(domain:d-em-music.com)",
+      "Bash(nslookup d-em-music.com)",
+      "Bash(nslookup www.d-em-music.com)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\DM\\\\Documents\\\\D_Em - Music\" -File | Where-Object { $_.Extension -match '\\\\.\\(jpg|jpeg|png|gif|bmp|webp|svg|ico|tiff|tif|raw|heic|avif\\)$' } | Select-Object Name, DirectoryName)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\DM\\\\Documents\\\\D_Em - Music\" -Recurse -File | Where-Object { $_.Extension -match '\\\\.\\(jpg|jpeg|png|gif|bmp|webp|svg|ico|tiff|tif|raw|heic|avif\\)$' } | Select-Object FullName)"
     ]
   }
 }
